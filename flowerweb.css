@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s linear;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    /* background-color:rgb(241, 226, 228); */
+    background-color: #ffff;
+}
+header .container{
+    width: 100%;
+    height: 150px;
+    position:fixed;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    /* background-color:rgb(241, 226, 228); */
+    background-color: #ffff;
+    box-shadow: 1px 2px 3px rgb(137, 137, 137);
+    z-index: 9999;
+}
+header .container .company{
+    width: 100%;
+    /* height: 50px; */
+    justify-content: center;
+    display: inline-block;
+    margin-bottom: 20px;
+     
+}
+header .container .company .comtitle h2{
+     word-spacing: 5px;
+     font-weight: 100;
+     
+}
+header .container .company .icons{
+     float: right; 
+     padding-right: 40px;
+     font-size: 1.5rem;
+     color: black;
+     letter-spacing: 5px;
+
+}
+header .container .company .icons .fas:hover{
+    color: rgb(81, 12, 83);
+}
+
+header .container .navbar a{
+    color: black;
+    padding: 0 1.5rem;
+    font-size: .9rem;
+}
+header .container .navbar a:hover{
+    color: rgb(81, 17, 81);
+}
+
+
+
+/* *==== section part is start =====*/
+section{
+    padding-top: 150px;
+
+    /* position: absolute; */
+   
+ }
+
+/*-================ home ================-*/
+
+
+.maindiv .home{
+    width: 100%;
+    height: 600px;
+}
+.maindiv .home .name{
+    position: absolute;
+    z-index: 1111;
+    text-transform: uppercase;
+    /* background-color: rgb(0, 255, 94); */
+    text-align: center;
+    color: #ffff;
+    top: 100%;
+    left: 50%;
+    transform: translate(0 -50%);
+
+}
+.maindiv .home .name h2{
+    font-weight: 100;
+    padding: 10px 10px 40px 10px;
+    text-shadow: 1px 2px 3px rgb(93, 92, 92);
+    
+}
+a.btn{
+    color: black;
+    background-color: aliceblue;  
+    padding: 15px 40px;
+    font-weight: 10px;
+    border:1px solid #ffff;
+    /* animation: shop 3s linear infinite; */
+}
+/* @keyframes shop {
+    25%{
+        background-color: beige;
+    }
+    75%{
+        background-color: rgb(200, 240, 240);
+    }
+} */
+a.btn:hover{
+    background-color: transparent;
+    color: #ffff;
+}
+
+
+.maindiv .home .imgbx img{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    /* filter: blur(1px); */
+    filter: grayscale(60%);
+    animation: ani 2s  infinite ease-in ;
+}
+@keyframes ani {
+    20%,50% ,80%{
+        background-image: url(/website/flowerwebsite/flowerwebimg/home2.webp);
+    }
+    
+}
+
+
+  /* ====================== about =================== */
+
+
+.about{
+    margin-top: 50px;
+
+}
+.about  h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.about .field{
+    display: flex;
+    padding: 20px 80px;
+    column-gap: 70px;
+    align-items: center; 
+
+}
+.about .field .flower{
+      word-spacing: 3px;
+}
+.about .field .imgabout img{
+    border: 10px solid rgb(183, 153, 153);
+    box-shadow: 5px 4px 2px 2px rgb(160, 157, 157);
+    border-radius: 7px;
+}
+
+
+/*====best sellers=====*/
+
+.sellers h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.sellers .main{
+    display: flex;
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+
+.sellers .main .box{
+    width: 100%;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+.sellers .main .box img{
+    width: 250px;
+    height: 250px;
+    column-gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.sellers .main .box h3{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+}
+.sellers .main .box p{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+/*=============== shop collection ==================*/
+
+.collection h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.collection {
+    width: 100%;
+}
+.collection .field .container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.collection .field{
+    padding: 0 35px;
+}
+
+.collection .field .container .item{
+    display: flex;
+    margin-top: 50px;
+    
+}
+.collection .field .container .item  .wrapper1  img{
+    margin: 20px;
+
+}
+.collection .field .container .item  .wrapper2 img{
+    margin: 20px;
+
+}
+.collection .field .container .item .shop img{
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+    gap: 20px;
+}
+.collection .field .container .item img:hover{
+    width: 310px;
+    height: 310px;
+
+}
+
+.collection .field .shop1 img{
+    width: 400px;
+    height: 800px;
+    position: relative;
+    opacity:2;
+    /* border: 1px solid black; */
+}
+.collection .field .shop{
+    position: relative;
+    
+}
+.collection .field .shop img{
+    width: 370px;
+    height: 400px;
+    display: block;
+    
+    /* border: 1px solid black; */
+}
+.collection .field .wrap3{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 20px;
+    justify-content: center;
+   
+}
+.collection .field .shop h3{
+    position: absolute;
+    top: 170px;
+    left: 80px; 
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffff;
+
+    
+}
+.collection .field .shop a{
+    position: absolute;
+    top: 200px;
+    left: 100px; 
+}
+.collection .field .shop img:hover{
+    width: 375px;
+    height: 405px;
+    /* overflow: hidden; */
+    
+}
+
+
+/*========= floral decore ============*/
+.decore{
+    margin-top: 100px;
+  
+    
+}
+.decore h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.decore .floral-decore .corporate-event img{
+    
+    width: 800px;
+    height: 800px;
+    margin-left: 240px;
+}
+
+.decore .floral-decore .homedecore img{
+    margin-top: 0px;
+    width: 800px;
+    height: 800px;
+    margin-left: 240px;
+}
+
+/*========== footer =============*/
+hr{
+    margin-top: 50px ;
+}
+
+footer{
+    background-color:#f4efef;
+    width: 100%;
+    padding:0 40px;
+    align-items: center;
+}
+footer .foot{
+    display: flex;
+    list-style: none;
+    padding-top:20px ;
+    align-items: center;
+
+}
+footer h2{
+    text-transform: uppercase;
+    font-weight: 100;
+}
+footer .foot .resoures{
+   margin:0 20% 0 10%;
+   text-transform: capitalize;
+}
+footer .foot .resoures li{
+      padding: 5px;
+}
+
+footer .foot .connect{
+    margin-right: 100px;
+    padding: 5px 0;
+}
+footer .foot .connect .fab{
+    padding-top: 15px;
+    letter-spacing: 8px;
+    font-size: 1rem;
+    color: black;
+    
+}
+footer .foot .connect .fab:hover{
+    color: blue;
+}
+footer .powered{
+      padding: 3% 10%;
+}
+
+
+
